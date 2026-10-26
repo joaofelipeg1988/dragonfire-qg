@@ -180,7 +180,7 @@ function openD(n){
   var mm=document.getElementById('mm');
   mm.innerHTML = d.vid
     ? '<video src="media/'+d.vid+'" autoplay muted loop playsinline></video>'
-    : '<img src="'+d.img+'" alt="'+n+'" onerror="this.style.display='none'">';
+    : '<img src="'+d.img+'" alt="'+n+'" onerror="this.remove()">';
   var st=[['FORCA',d.str],['INSTINTO',d.inst],['INTELECTO',d.int],['INICIATIVA',d.init]]
     .map(function(x){return '<div class="mstat"><span>'+x[0]+'</span><b>'+(x[1]==null?'-':x[1])+'</b></div>'}).join('');
   var hb=(d.habits||[]).map(function(v,i){ if(!v) return '';
