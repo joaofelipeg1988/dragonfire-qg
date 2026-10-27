@@ -225,9 +225,12 @@ tr[data-hermes-send]:hover td{background:rgba(200,162,74,.07);color:#fff3d0}
  .wmain span{font-size:17px}.wgrid span{font-size:15px}.wgrid b{font-size:26px}
  .btn{font-size:17px;padding:12px 24px}.fb{font-size:16px;padding:8px 16px}
  .teams{grid-template-columns:repeat(2,minmax(0,1fr))}
- .dcard{width:clamp(210px,13vw,340px);transform:none!important}
- .slot{margin:0 6px!important;z-index:auto}
- .slot.van{margin:0 6px!important;z-index:auto}
+ .battle{gap:14px!important;align-items:stretch}
+ .slot{flex:1 1 0!important;min-width:0!important;width:auto!important;margin:0!important;z-index:auto}
+ .slot.van{flex:1 1 0!important;margin:0!important;z-index:auto}
+ .dcard{width:100%!important;max-width:440px!important;margin:0 auto;transform:none!important;
+        line-height:1.55;padding:10px 11px!important}
+ .dcard *{overflow-wrap:anywhere}
  .wrap{overflow-x:hidden}
  body{overflow-x:hidden}
 }
