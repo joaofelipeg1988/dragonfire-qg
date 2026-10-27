@@ -30,7 +30,7 @@ padding:8px 6px;text-align:center}
 border-left:2px solid rgba(201,162,74,.5);padding:10px 12px;border-radius:0 8px 8px 0}
 @media(max-width:520px){.mmedia{height:210px}.mname{font-size:21px}.mstats{grid-template-columns:repeat(2,1fr)}}
 
-.portrait video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;-webkit-mask-image:radial-gradient(ellipse 78% 78% at 50% 46%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 78% 78% at 50% 46%,#000 58%,transparent 100%)}
+.portrait video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;-webkit-mask-image:radial-gradient(ellipse 88% 88% at 50% 44%,#000 62%,transparent 100%),linear-gradient(to bottom,#000 82%,transparent 99%);-webkit-mask-composite:source-in;mask-image:radial-gradient(ellipse 88% 88% at 50% 44%,#000 62%,transparent 100%),linear-gradient(to bottom,#000 82%,transparent 99%);mask-composite:intersect}
 .portrait video.anim{cursor:pointer}
 
 .wallet{max-width:900px;margin:0 auto 22px;border:1px solid rgba(200,162,74,.3);border-radius:4px;
@@ -66,6 +66,21 @@ border-left:2px solid rgba(201,162,74,.5);padding:10px 12px;border-radius:0 8px 
 .slot.van .ember{animation-duration:2.6s}
 .slot.van .ember:nth-of-type(2){left:42%;animation-delay:1.1s}
 .slot.van .ember:nth-of-type(3){left:58%;animation-delay:2s}
+/* LEGIBILIDADE DESKTOP */
+@media(min-width:900px){
+ .sb .k,.sb .v{font-size:11px} .sw{font-size:10px} .hab{font-size:10.5px}
+ .dmeta{font-size:10px} .phase{font-size:9px} .power{font-size:10px} .stars{font-size:11px}
+ .plabel{font-size:11px} .tname{font-size:12px} .tag{font-size:13px}
+ .banner{font-size:12px} .mcmd{font-size:14.5px} .mtag{font-size:11.5px}
+ .mstat span{font-size:10px} .mstat b{font-size:20px}
+ .bcard{font-size:12px} .bcard b{font-size:13px}
+ table{font-size:12px} th{font-size:10.5px}
+ .kitbox{font-size:11px} .chip{font-size:10px}
+ .hdr h1{font-size:clamp(20px,2vw,30px)} .hdr .sub{font-size:12px}
+ .wmain span{font-size:11px} .wgrid span{font-size:9.5px} .wgrid b{font-size:15px}
+ h2{font-size:13px}
+}
+@media(min-width:1400px){ .sb .k,.sb .v{font-size:12px} .hab{font-size:11px} .dmeta{font-size:11px} }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 :root{--obs:#08090c;--lea:#12151b;--gold:#c8a24a;--gold2:#e0bd63;--tar:#8b2635;--txt:#e8e2d4;--mut:#8c8577}
@@ -112,8 +127,9 @@ h2:before{left:0}h2:after{right:0;background:linear-gradient(270deg,transparent,
 .ph3{box-shadow:0 0 14px rgba(200,162,74,.12),0 10px 26px rgba(0,0,0,.6)}
 .dtop{display:flex;justify-content:flex-end}
 .power{font-size:clamp(5.5px,.62vw,8px);color:var(--gold);letter-spacing:.06em;background:rgba(8,9,12,.8);border:1px solid #6b5a30;border-radius:2px;padding:1px 4px}
-.portrait{position:relative;aspect-ratio:1;border-radius:2px;overflow:hidden;margin-top:3px;background:radial-gradient(70% 70% at 50% 40%,rgba(200,162,74,.12),transparent 70%)}
+.portrait{position:relative;aspect-ratio:3/2;border-radius:2px;overflow:hidden;margin-top:3px;background:radial-gradient(70% 70% at 50% 40%,rgba(200,162,74,.12),transparent 70%)}
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait video{object-fit:cover}
 .portrait .ini{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(22px,2.6vw,40px);color:rgba(232,226,212,.16)}
 .phase{position:absolute;top:3px;left:3px;font-size:clamp(4.5px,.5vw,6.5px);letter-spacing:.14em;text-transform:uppercase;
  color:#cfc7b4;background:rgba(8,9,12,.72);border:1px solid #2b313c;border-radius:2px;padding:1px 3px}
